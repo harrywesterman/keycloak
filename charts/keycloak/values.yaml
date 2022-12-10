@@ -1,5 +1,5 @@
 # Optionally override the fully qualified name
-fullnameOverride: "keycloak.westermanonline.com "
+fullnameOverride: ""
 
 # Optionally override the name
 nameOverride: ""
