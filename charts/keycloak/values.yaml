@@ -1,11 +1,11 @@
 # Optionally override the fully qualified name
-fullnameOverride: ""
+fullnameOverride: "keycloak.westermanonline.com "
 
 # Optionally override the name
 nameOverride: ""
 
 # The number of replicas to create (has no effect if autoscaling enabled)
-replicas: 1
+replicas: 3
 
 image:
   # The Keycloak image repository
@@ -240,7 +240,7 @@ service:
   labels: {}
   # key: value
   # The Service type
-  type: ClusterIP
+  type: LoadBalancer
   # Optional IP for the load balancer. Used for services of type LoadBalancer only
   loadBalancerIP: ""
   # The http Service port
